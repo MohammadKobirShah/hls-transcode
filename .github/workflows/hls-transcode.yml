@@ -1,0 +1,36 @@
+name: HLS Transcoding
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour (at minute 0)
+
+jobs:
+  transcode:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install FFmpeg
+      run: |
+        sudo apt update
+        sudo apt install -y ffmpeg
+
+    - name: Transcode Live Stream to HLS
+      run: |
+        mkdir -p hls_output
+        ffmpeg -i "http://45.148.145.57/IN_JALSHAMOVIES/tracks-v1a1/mono.m3u8" \
+          -preset veryfast -g 48 -sc_threshold 0 \
+          -map v:0 -s 640x360 -b:v 800k -c:v h264 -hls_time 6 -hls_playlist_type vod -f hls hls_output/360p.m3u8 \
+          -map v:0 -s 1280x720 -b:v 2500k -c:v h264 -hls_time 6 -hls_playlist_type vod -f hls hls_output/720p.m3u8 \
+          -map v:0 -s 1920x1080 -b:v 5000k -c:v h264 -hls_time 6 -hls_playlist_type vod -f hls hls_output/1080p.m3u8
+
+    - name: Upload HLS Files to GitHub Pages
+      uses: actions/upload-artifact@v3
+      with:
+        name: hls-files
+        path: hls_output
