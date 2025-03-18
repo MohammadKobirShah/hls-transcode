@@ -1,0 +1,27 @@
+name: Fetch IP Info
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  fetch-ip-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Install curl & jq
+        run: sudo apt-get update && sudo apt-get install -y curl jq
+
+      - name: Fetch IP Info
+        run: bash scripts/fetch_ipinfo.sh
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ipinfo.json
+          git commit -m "Updated IP info [$(date)]" || echo "No changes to commit"
+          git push
