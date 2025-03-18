@@ -1,11 +1,11 @@
 {
-  "ip": "20.25.192.24",
-  "city": "Chicago",
-  "region": "Illinois",
+  "ip": "52.225.37.48",
+  "city": "San Jose",
+  "region": "California",
   "country": "US",
-  "loc": "41.8500,-87.6500",
+  "loc": "37.3394,-121.8950",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "60666",
-  "timezone": "America/Chicago",
+  "postal": "95025",
+  "timezone": "America/Los_Angeles",
   "readme": "https://ipinfo.io/missingauth"
 }
