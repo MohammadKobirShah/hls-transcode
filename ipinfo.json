@@ -1,11 +1,11 @@
 {
-  "ip": "20.161.59.226",
-  "city": "Boydton",
-  "region": "Virginia",
+  "ip": "4.227.2.213",
+  "city": "Phoenix",
+  "region": "Arizona",
   "country": "US",
-  "loc": "36.6676,-78.3875",
+  "loc": "33.4484,-112.0740",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "23917",
-  "timezone": "America/New_York",
+  "postal": "85001",
+  "timezone": "America/Phoenix",
   "readme": "https://ipinfo.io/missingauth"
 }
