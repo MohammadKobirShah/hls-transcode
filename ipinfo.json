@@ -1,11 +1,11 @@
 {
-  "ip": "4.227.174.97",
-  "city": "Wardensville",
-  "region": "West Virginia",
+  "ip": "20.102.199.93",
+  "city": "Chicago",
+  "region": "Illinois",
   "country": "US",
-  "loc": "39.0751,-78.5978",
+  "loc": "41.8500,-87.6500",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "26851",
-  "timezone": "America/New_York",
+  "postal": "60666",
+  "timezone": "America/Chicago",
   "readme": "https://ipinfo.io/missingauth"
 }
