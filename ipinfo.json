@@ -1,11 +1,11 @@
 {
-  "ip": "4.227.173.240",
-  "city": "Washington",
-  "region": "District of Columbia",
+  "ip": "52.234.46.112",
+  "city": "San Jose",
+  "region": "California",
   "country": "US",
-  "loc": "38.8951,-77.0364",
+  "loc": "37.3394,-121.8950",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "20004",
-  "timezone": "America/New_York",
+  "postal": "95025",
+  "timezone": "America/Los_Angeles",
   "readme": "https://ipinfo.io/missingauth"
 }
