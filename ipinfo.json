@@ -1,11 +1,11 @@
 {
-  "ip": "20.57.79.146",
-  "city": "Boydton",
-  "region": "Virginia",
+  "ip": "52.234.47.213",
+  "city": "San Jose",
+  "region": "California",
   "country": "US",
-  "loc": "36.6676,-78.3875",
+  "loc": "37.3394,-121.8950",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "23917",
-  "timezone": "America/New_York",
+  "postal": "95025",
+  "timezone": "America/Los_Angeles",
   "readme": "https://ipinfo.io/missingauth"
 }
