@@ -1,11 +1,11 @@
 {
-  "ip": "20.42.17.118",
-  "city": "Reston",
-  "region": "Virginia",
+  "ip": "52.234.33.67",
+  "city": "San Jose",
+  "region": "California",
   "country": "US",
-  "loc": "38.9687,-77.3411",
+  "loc": "37.3394,-121.8950",
   "org": "AS8075 Microsoft Corporation",
-  "postal": "20190",
-  "timezone": "America/New_York",
+  "postal": "95025",
+  "timezone": "America/Los_Angeles",
   "readme": "https://ipinfo.io/missingauth"
 }
